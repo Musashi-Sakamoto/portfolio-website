@@ -13,12 +13,14 @@
     "fs-extra": "^9.0.0",
     "next": "latest",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-scroll": "^1.7.16"
   },
   "devDependencies": {
     "@types/node": "^12.12.21",
     "@types/react": "^16.9.16",
     "@types/react-dom": "^16.9.4",
+    "@types/react-scroll": "^1.5.5",
     "typescript": "3.7.3"
   },
   "license": "ISC"

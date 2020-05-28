@@ -1,8 +1,8 @@
 import * as React from 'react'
-import Link from 'next/link'
 import Head from 'next/head'
-import { AppBar, Button, makeStyles, Toolbar, Typography, Box, Container, IconButton, Menu, MenuItem } from '@material-ui/core';
+import { AppBar, Button, makeStyles, Toolbar, Typography, Box, IconButton, Menu, MenuItem } from '@material-ui/core';
 import MoreIcon from '@material-ui/icons/MoreVert'
+import { Link } from 'react-scroll'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -60,37 +60,42 @@ const Layout: React.FunctionComponent<Props> = ({
     >
       <MenuItem>
         <Button color="inherit">
-          <Link href="/about_me">
-            <a>
-              <Typography color="inherit">About me</Typography>
-            </a>
+          <Link to="about_me"
+            smooth={true}
+            offset={-50}
+            duration={500}
+            delay={500}>
+            <Typography color="inherit">About me</Typography>
           </Link>
         </Button>
       </MenuItem>
       <MenuItem>
         <Button color="inherit">
-          <Link href="/interests">
-            <a>
-              <Typography color="inherit">Interests</Typography>
-            </a>
+          <Link to="interests" smooth={true}
+            offset={-50}
+            duration={500}
+            delay={500}>
+            <Typography color="inherit">Interests</Typography>
           </Link>
         </Button>
       </MenuItem>
       <MenuItem>
         <Button color="inherit">
-        <Link href="/portfolios">
-          <a>
-            <Typography color="inherit">Portfolios</Typography>
-          </a>
+        <Link to="portfolios" smooth={true}
+            offset={-50}
+            duration={500}
+            delay={500}>
+          <Typography color="inherit">Portfolios</Typography>
         </Link>
       </Button>
       </MenuItem>
       <MenuItem>
         <Button color="inherit">
-          <Link href="/contact">
-            <a>
-              <Typography color="inherit">Contact</Typography>
-            </a>
+          <Link to="contact" smooth={true}
+            offset={-50}
+            duration={500}
+            delay={500}>
+            <Typography color="inherit">Contact</Typography>
           </Link>
         </Button>
       </MenuItem>
@@ -112,34 +117,38 @@ const Layout: React.FunctionComponent<Props> = ({
 
             <div className={classes.sectionDesktop}>
               <Button color="inherit">
-                <Link href="/about_me">
-                  <a style={{ color: 'white' }}>
-                    <Typography color="inherit">About me</Typography>
-                  </a>
+                <Link to="about_me" smooth={true}
+                  offset={-50}
+                  duration={500}
+                  delay={500}>
+                  <Typography color="inherit">About me</Typography>
                 </Link>
               </Button>
 
               <Button color="inherit">
-                <Link href="/interests">
-                  <a style={{ color: 'white' }}>
+                <Link to="interests" smooth={true}
+                  offset={-50}
+                  duration={500}
+                  delay={500}>
                     <Typography color="inherit">Interests</Typography>
-                  </a>
                 </Link>
               </Button>
     
               <Button color="inherit">
-                <Link href="/portfolios">
-                  <a style={{ color: 'white' }}>
+                <Link to="portfolios" smooth={true}
+                  offset={-50}
+                  duration={500}
+                  delay={500}>
                     <Typography color="inherit">Portfolios</Typography>
-                  </a>
                 </Link>
               </Button>
     
               <Button color="inherit">
-                <Link href="/contact">
-                  <a style={{ color: 'white' }}>
-                    <Typography color="inherit">Contact</Typography>
-                  </a>
+                <Link to="contact" smooth={true}
+                  offset={-50}
+                  duration={500}
+                  delay={500}>
+                  <Typography color="inherit">Contact</Typography>
                 </Link>
               </Button>
             </div>
@@ -160,10 +169,6 @@ const Layout: React.FunctionComponent<Props> = ({
           <Box marginTop={8}>
             {children}
           </Box>
-      <footer>
-        <hr />
-        <span>I'm here to stay (Footer)</span>
-      </footer>
     </div>
   )
 }
