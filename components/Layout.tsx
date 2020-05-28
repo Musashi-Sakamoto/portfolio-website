@@ -166,7 +166,7 @@ const Layout: React.FunctionComponent<Props> = ({
           </Toolbar>
         </AppBar>
         {renderMobileMenu}
-          <Box marginTop={8}>
+          <Box marginTop={3}>
             {children}
           </Box>
     </div>
