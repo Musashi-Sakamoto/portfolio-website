@@ -1,8 +1,8 @@
 import * as React from 'react'
 import Head from 'next/head'
-import { AppBar, Button, makeStyles, Toolbar, Typography, Box, IconButton, Menu, MenuItem } from '@material-ui/core';
+import { AppBar, makeStyles, Toolbar, Typography, Box, IconButton, Menu, MenuItem } from '@material-ui/core';
 import MoreIcon from '@material-ui/icons/MoreVert'
-import { Link } from 'react-scroll'
+import ScrollButton from './ScrollButton'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -59,45 +59,16 @@ const Layout: React.FunctionComponent<Props> = ({
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <Button color="inherit">
-          <Link to="about_me"
-            smooth={true}
-            offset={-50}
-            duration={500}
-            delay={500}>
-            <Typography color="inherit">About me</Typography>
-          </Link>
-        </Button>
+        <ScrollButton to="about_me" title="About me" />
       </MenuItem>
       <MenuItem>
-        <Button color="inherit">
-          <Link to="interests" smooth={true}
-            offset={-50}
-            duration={500}
-            delay={500}>
-            <Typography color="inherit">Interests</Typography>
-          </Link>
-        </Button>
+        <ScrollButton to="interests" title="Interests" />
       </MenuItem>
       <MenuItem>
-        <Button color="inherit">
-        <Link to="portfolios" smooth={true}
-            offset={-50}
-            duration={500}
-            delay={500}>
-          <Typography color="inherit">Portfolios</Typography>
-        </Link>
-      </Button>
+        <ScrollButton to="portfolios" title="Portfolios" />
       </MenuItem>
       <MenuItem>
-        <Button color="inherit">
-          <Link to="contact" smooth={true}
-            offset={-50}
-            duration={500}
-            delay={500}>
-            <Typography color="inherit">Contact</Typography>
-          </Link>
-        </Button>
+        <ScrollButton to="contact" title="Contact" />
       </MenuItem>
     </Menu>
   );
@@ -116,41 +87,10 @@ const Layout: React.FunctionComponent<Props> = ({
             </Typography>
 
             <div className={classes.sectionDesktop}>
-              <Button color="inherit">
-                <Link to="about_me" smooth={true}
-                  offset={-50}
-                  duration={500}
-                  delay={500}>
-                  <Typography color="inherit">About me</Typography>
-                </Link>
-              </Button>
-
-              <Button color="inherit">
-                <Link to="interests" smooth={true}
-                  offset={-50}
-                  duration={500}
-                  delay={500}>
-                    <Typography color="inherit">Interests</Typography>
-                </Link>
-              </Button>
-    
-              <Button color="inherit">
-                <Link to="portfolios" smooth={true}
-                  offset={-50}
-                  duration={500}
-                  delay={500}>
-                    <Typography color="inherit">Portfolios</Typography>
-                </Link>
-              </Button>
-    
-              <Button color="inherit">
-                <Link to="contact" smooth={true}
-                  offset={-50}
-                  duration={500}
-                  delay={500}>
-                  <Typography color="inherit">Contact</Typography>
-                </Link>
-              </Button>
+              <ScrollButton to="about_me" title="About me" />
+              <ScrollButton to="interests" title="Interests" />
+              <ScrollButton to="portfolios" title="Portfolios" />
+              <ScrollButton to="contact" title="Contact" />
             </div>
             <div className={classes.sectionMobile}>
               <IconButton
