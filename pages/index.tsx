@@ -3,6 +3,7 @@ import { Grid, makeStyles } from '@material-ui/core'
 import { Element } from 'react-scroll'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
+import Portfolio from '../components/Portfolio'
 
 const useStyles = makeStyles(theme => ({
   section: {
@@ -28,9 +29,7 @@ const IndexPage = () => {
         <Skills />
       </Element>
       <Element name="portfolios">
-        <Grid container className={`${classes.section} ${classes.greyBackground}`}>
-          <h1>Hello Next.js3 👋</h1>
-        </Grid>
+        <Portfolio />
       </Element>
       <Element name="contact">
         <Grid container >
