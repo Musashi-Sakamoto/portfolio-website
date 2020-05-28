@@ -40,7 +40,7 @@ const AboutMe = () => {
 
   return (
     <Grid innerRef={myRef} container className={classes.section} justify="center" alignItems="center">
-      <Grid item xs={6} container justify="center">
+      <Grid item xs={10} sm={6} container justify="center">
         <Typography variant="h4">
           Hello, I am Musashi Sakamoto.
         </Typography>
