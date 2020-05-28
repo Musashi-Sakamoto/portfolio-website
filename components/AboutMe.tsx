@@ -9,6 +9,10 @@ const useStyles = makeStyles(theme => ({
     height: '100vh',
     color: 'white'
   },
+  padding: {
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
+  },
 }));
 
 const AboutMe = () => {
@@ -40,10 +44,10 @@ const AboutMe = () => {
         <Typography variant="h4">
           Hello, I am Musashi Sakamoto.
         </Typography>
-        <Typography variant="h6">
+        <Typography variant="h6" className={classes.padding}>
           I am a fullstack software developer who was born in Japan and currently living in Canada.
         </Typography>
-        <ScrollButton to="interests" title="Read more" outlined/>
+        <ScrollButton to="skills" title="Read more" outlined/>
       </Grid>
     </Grid>
   )

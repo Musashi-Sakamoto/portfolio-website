@@ -62,7 +62,7 @@ const Layout: React.FunctionComponent<Props> = ({
         <ScrollButton to="about_me" title="About me" />
       </MenuItem>
       <MenuItem>
-        <ScrollButton to="interests" title="Interests" />
+        <ScrollButton to="skills" title="Skills" />
       </MenuItem>
       <MenuItem>
         <ScrollButton to="portfolios" title="Portfolios" />
@@ -88,7 +88,7 @@ const Layout: React.FunctionComponent<Props> = ({
 
             <div className={classes.sectionDesktop}>
               <ScrollButton to="about_me" title="About me" />
-              <ScrollButton to="interests" title="Interests" />
+              <ScrollButton to="skills" title="Skills" />
               <ScrollButton to="portfolios" title="Portfolios" />
               <ScrollButton to="contact" title="Contact" />
             </div>
