@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
-import { Grid, makeStyles, Typography, Button, Card, CardActionArea, CardActions, CardContent, CardMedia } from '@material-ui/core'
+import { Grid, makeStyles, Typography } from '@material-ui/core'
 import * as THREE from 'three'
 import FOG from 'vanta/dist/vanta.fog.min'
 
@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
 
 const Portfolio = () => {
   const classes = useStyles();
-  const [vantaEffect, setVantaEffect] = useState(0)
+  const [vantaEffect, setVantaEffect] = useState<any>(0)
   const myRef = useRef(null)
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const Portfolio = () => {
             <CardComponent
               title="Portfolio"
               description="My own full responsive portfolio site. This is created using NextJS, TypeScript, Material-Ui. For 3d backgrounds, vanta.js is used."
-              pageLink=''
+              pageLink='https://portfolio-seven-smoky.now.sh'
               githubLink='https://github.com/Musashi-Sakamoto/portfolio-website'
               imageUrl='https://i.gyazo.com/70e47612132a043d29823801ec7700f2.png' />
           </Grid>

@@ -2,7 +2,7 @@ import { makeStyles, Typography, Card, CardActions, CardContent, CardMedia, Icon
 import { FaGithub } from 'react-icons/fa'
 import { AiOutlineLink } from 'react-icons/ai'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   root: {
     maxWidth: 345,
     margin: 'auto'

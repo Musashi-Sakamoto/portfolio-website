@@ -43,7 +43,7 @@ const Layout: React.FunctionComponent<Props> = ({
     setMobileMoreAnchorEl(null);
   };
 
-  const handleMobileMenuOpen = (event) => {
+  const handleMobileMenuOpen = (event: any) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 

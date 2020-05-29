@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 
 const AboutMe = () => {
   const classes = useStyles();
-  const [vantaEffect, setVantaEffect] = useState(0)
+  const [vantaEffect, setVantaEffect] = useState<any>(0)
   const myRef = useRef(null)
 
   useEffect(() => {

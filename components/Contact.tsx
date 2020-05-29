@@ -3,7 +3,7 @@ import { Grid, makeStyles, Typography, IconButton } from '@material-ui/core'
 import { FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa'
 import { AiOutlineMail } from 'react-icons/ai'
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles(() => ({
   section: {
     height: '100vh',
   },
