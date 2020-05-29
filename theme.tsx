@@ -17,6 +17,16 @@ const theme = createMuiTheme({
       default: '#fff',
     },
   },
+  overrides: {
+    MuiGrid: {
+      'spacing-xs-5': {
+        width: '100%',
+        '& > $item': {
+          paddingRight: '0'
+        }
+      }
+    }
+  }
 });
 
 export default theme;
