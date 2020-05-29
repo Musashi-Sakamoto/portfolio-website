@@ -4,7 +4,6 @@ import { IoLogoJavascript } from 'react-icons/io'
 import { GrMysql, GrSwift, GrGithub, GrHeroku } from 'react-icons/gr'
 import { DiMongodb } from 'react-icons/di'
 import { BsCodeSlash } from 'react-icons/bs'
-import TypeScriptIcon from '../images/typescript.svg';
 
 const useStyles = makeStyles(theme => ({
   section: {
