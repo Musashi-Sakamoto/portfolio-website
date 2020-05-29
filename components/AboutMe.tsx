@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react'
-import { Grid, makeStyles, Typography, Button } from '@material-ui/core'
+import { Grid, makeStyles, Typography } from '@material-ui/core'
 import * as THREE from 'three'
 import GLOBE from 'vanta/dist/vanta.globe.min'
 import ScrollButton from './ScrollButton'
