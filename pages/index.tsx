@@ -4,6 +4,7 @@ import { Element } from 'react-scroll'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
 import Portfolio from '../components/Portfolio'
+import Contact from '../components/Contact'
 
 const useStyles = makeStyles(theme => ({
   section: {
@@ -32,9 +33,7 @@ const IndexPage = () => {
         <Portfolio />
       </Element>
       <Element name="contact">
-        <Grid container >
-          <h1>Hello Next.js4 👋</h1>
-        </Grid>
+        <Contact />
       </Element>
     </Layout>
   )
