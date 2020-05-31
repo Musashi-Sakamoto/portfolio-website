@@ -17,6 +17,9 @@ const theme = createMuiTheme({
       default: '#fff',
     },
   },
+  typography: {
+    fontFamily: `"Merriweather", "Helvetica", "Arial", sans-serif`,
+  },
   overrides: {
     MuiGrid: {
       'spacing-xs-5': {
