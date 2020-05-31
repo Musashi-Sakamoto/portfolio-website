@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { makeStyles, Typography, Card, CardActions, CardContent, CardMedia, IconButton } from '@material-ui/core'
 import { FaGithub } from 'react-icons/fa'
 import { AiOutlineLink } from 'react-icons/ai'
@@ -22,8 +23,9 @@ interface IProps {
 
 const CardComponent = ({ title, description, githubLink, pageLink, imageUrl }: IProps) => {
   const classes = useStyles();
+  const [shadow, setShadow] = useState(5);
   return (
-    <Card className={classes.root} elevation={5}>
+    <Card className={classes.root} elevation={shadow} onMouseLeave={() => setShadow(5)} onMouseOver={() => setShadow(20)}>
         <CardMedia
           className={classes.media}
           image={imageUrl}
