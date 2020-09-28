@@ -82,7 +82,7 @@ const Portfolio = () => {
           <Grid item xs={12} sm={6}>
             <CardComponent
               title="Alt Fashion"
-              description="E-commerce site created with Gatsby.js and Netlify using Shopify Storefront API."
+              description="E-commerce site created with Gatsby.js and Netlify using Shopify Storefront API. it rebuilds on shopify event or github event. JamStack product."
               pageLink="https://alt.fashion"
               githubLink="#"
               imageUrl="https://i.gyazo.com/27fdfbaf64063d8510c9b34a1b30233d.png"
