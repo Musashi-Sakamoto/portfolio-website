@@ -61,7 +61,7 @@ const Portfolio = () => {
           </Typography>
         </Grid>
         <Grid container item spacing={5}>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={4}>
             <CardComponent
               title="Portfolio"
               description="My own full responsive portfolio site. This is created using NextJS, TypeScript, Material-Ui. For 3d backgrounds, vanta.js is used."
@@ -70,7 +70,7 @@ const Portfolio = () => {
               imageUrl="https://i.gyazo.com/70e47612132a043d29823801ec7700f2.png"
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={4}>
             <CardComponent
               title="Rock Scissors Paper"
               description="Simple 'Rock Scissors Paper' game you can do with your friend online. I came up with this idea when I was talking on Skype. My friend and I were about to decide something. Then I thought it'd be interesting if we had something like this. Created using React, Express.js, Socket.io, Heroku"
@@ -79,13 +79,31 @@ const Portfolio = () => {
               imageUrl="https://i.gyazo.com/a51bedfe584a27e3beac0540b6eb6127.png"
             />
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={4}>
             <CardComponent
               title="Alt Fashion"
               description="E-commerce site created with Gatsby.js and Netlify using Shopify Storefront API. it rebuilds on shopify event or github event. JamStack product."
               pageLink="https://alt.fashion"
               githubLink="#"
               imageUrl="https://i.gyazo.com/27fdfbaf64063d8510c9b34a1b30233d.png"
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <CardComponent
+              title="Otm-Pressa"
+              description="E-commerce site created with Gatsby.js and Netlify using Shopify Storefront API. it rebuilds on shopify event or github event. JamStack product."
+              pageLink="https://www.bfrpressamerch.com"
+              githubLink="#"
+              imageUrl="https://i.gyazo.com/d3a14f8028330e46a30f80c83784f47a.png"
+            />
+          </Grid>
+          <Grid item xs={12} sm={4}>
+            <CardComponent
+              title="Hollow Heaven"
+              description="E-commerce site created with Gatsby.js and Netlify using Shopify Storefront API. it rebuilds on shopify event or github event. JamStack product."
+              pageLink="https://www.hollowheaven.com/"
+              githubLink="#"
+              imageUrl="https://i.gyazo.com/bf5c78a13aead2a30f5251151ecb47d5.jpg"
             />
           </Grid>
         </Grid>
