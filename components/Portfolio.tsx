@@ -97,6 +97,15 @@ const Portfolio = () => {
               imageUrl="https://i.gyazo.com/e2d948f805a97792119f8d2c36991b3a.jpg"
             />
           </Grid>
+          <Grid item xs={12} sm={4}>
+            <CardComponent
+              title="PokeDex"
+              description="A Simple Pokedex. The stack is nextjs, pokemon graphql api, material-ui"
+              pageLink="https://ciccc-midterm.vercel.app/"
+              githubLink="https://github.com/Musashi-Sakamoto/CICCC-Midterm"
+              imageUrl="https://i.gyazo.com/e6d082a58a332c94371f0f0bb5c5cf99.jpg"
+            />
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
