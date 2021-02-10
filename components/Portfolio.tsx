@@ -90,20 +90,11 @@ const Portfolio = () => {
           </Grid>
           <Grid item xs={12} sm={4}>
             <CardComponent
-              title="Otm-Pressa"
-              description="E-commerce site created with Gatsby.js and Netlify using Shopify Storefront API. it rebuilds on shopify event or github event. JamStack product."
-              pageLink="https://www.bfrpressamerch.com"
-              githubLink="#"
-              imageUrl="https://i.gyazo.com/d3a14f8028330e46a30f80c83784f47a.png"
-            />
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <CardComponent
-              title="Hollow Heaven"
-              description="E-commerce site created with Gatsby.js and Netlify using Shopify Storefront API. it rebuilds on shopify event or github event. JamStack product."
-              pageLink="https://www.hollowheaven.com/"
-              githubLink="#"
-              imageUrl="https://i.gyazo.com/bf5c78a13aead2a30f5251151ecb47d5.jpg"
+              title="Diary app"
+              description="A Simple CRUD APP for your diary. The stack is express, nextjs, docker, send grid, heroku, s3, mysql, redis"
+              pageLink="https://frontend.1292602b.now.sh/"
+              githubLink="https://github.com/Musashi-Sakamoto/Diary"
+              imageUrl="https://i.gyazo.com/e2d948f805a97792119f8d2c36991b3a.jpg"
             />
           </Grid>
         </Grid>
